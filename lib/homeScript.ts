@@ -1,3 +1,4 @@
+// @ts-nocheck
 /* Ported verbatim from the original single-file build. Runs once on mount. */
 export function initHome(){
 
