@@ -75,15 +75,15 @@ Projects: NORA (LangChain multi-agent advising platform, ChromaDB RAG, 92% accur
 Stack: Python, TypeScript, Java, Go; LangChain/LangGraph, MCP, RAG; React/Next.js; Node/FastAPI/NestJS; AWS, Kafka, Redis, Docker, Kubernetes, ArgoCD.
 Open to full-time roles Aug 2026. Contact: hassani.hritik@gmail.com, linkedin.com/in/hritik-hassani. If unsure, suggest emailing him. Never invent facts.` };
   const KB=[
-    {k:['hire','hiring','available','open to','job','recruit','role'],a:"Yes — Hritik is open to full-time Software / AI Engineering roles starting August 2026. Reach him at hassani.hritik@gmail.com or on LinkedIn."},
-    {k:['codametrix','coda','co-op','clinical','recent'],a:"At CodaMetrix, Hritik built a clinical-coding AI agent (LangGraph, Databricks) that analyzes Jira tickets, retrieves rules via vector search, and auto-opens GitHub PRs — cutting engineering effort 48%. He also designed an event-driven Kafka/Redis platform (refresh 30→5 min) and migrated deploys to a Jenkins→ArgoCD GitOps pipeline on EKS."},
-    {k:['kritexco','nft','web3','blockchain','ethereum','solana','founder'],a:"Hritik co-founded Kritexco, a Web3 studio. He shipped a secure NFT marketplace (500+ users, 10+ countries), deployed contracts across Ethereum, Polygon, and Solana, and led a 10-engineer team — driving 20% revenue growth."},
-    {k:['nora','student','gemini','advising'],a:"NORA is an end-to-end AI advising platform — a LangChain multi-agent pipeline on Gemini 2.0 Flash that guides international students through CPT/OPT and coursework, grounded in university policy via a ChromaDB RAG layer with 92% accuracy."},
+    {k:['hire','hiring','available','open to','job','recruit','role'],a:"Yes, Hritik is open to full-time Software / AI Engineering roles starting August 2026. Reach him at hassani.hritik@gmail.com or on LinkedIn."},
+    {k:['codametrix','coda','co-op','clinical','recent'],a:"At CodaMetrix, Hritik built a clinical-coding AI agent (LangGraph, Databricks) that analyzes Jira tickets, retrieves rules via vector search, and auto-opens GitHub PRs cutting engineering effort 48%. He also designed an event-driven Kafka/Redis platform (refresh 30→5 min) and migrated deploys to a Jenkins→ArgoCD GitOps pipeline on EKS."},
+    {k:['kritexco','nft','web3','blockchain','ethereum','solana','founder'],a:"Hritik co-founded Kritexco, a Web3 studio. He shipped a secure NFT marketplace (500+ users, 10+ countries), deployed contracts across Ethereum, Polygon, and Solana, and led a 10-engineer team driving 20% revenue growth."},
+    {k:['nora','student','gemini','advising'],a:"NORA is an end-to-end AI advising platform a LangChain multi-agent pipeline on Gemini 2.0 Flash that guides international students through CPT/OPT and coursework, grounded in university policy via a ChromaDB RAG layer with 92% accuracy."},
     {k:['applystack','extension','chrome'],a:"ApplyStack is Hritik's Chrome MV3 extension: a Kanban job-tracker with a cross-frame autofill engine mapping 18 fields across 8 job boards, real-time multi-tab sync, and in-sandbox PDF export."},
     {k:['project','built','build','portfolio'],a:"Hritik has built NORA (an AI advising platform), ApplyStack (a Chrome job-tracker), and Kritexco (a Web3 marketplace). Ask about any of them!"},
     {k:['stack','skill','tech','language','tool'],a:"Hritik works in Python, TypeScript, Java, and Go; LangChain/LangGraph, MCP, and RAG for AI; React/Next.js; Node, FastAPI, NestJS; and AWS, Kafka, Redis, Docker, Kubernetes, and ArgoCD for systems and infra."},
     {k:['education','study','school','northeastern','degree'],a:"Hritik is finishing a Master's in Computer Software Engineering at Northeastern University (Aug 2026), with a Bachelor's in Electronics & Telecommunication from Mumbai University."},
-    {k:['who','about','summary','background','experience'],a:"Hritik is a Software & AI Engineer in the United States finishing a Master's at Northeastern. He builds production AI agents and the distributed systems behind them — most recently a clinical-coding agent at CodaMetrix — and co-founded the Web3 studio Kritexco."},
+    {k:['who','about','summary','background','experience'],a:"Hritik is a Software & AI Engineer in the United States finishing a Master's at Northeastern. He builds production AI agents and the distributed systems behind them most recently a clinical-coding agent at CodaMetrix and co-founded the Web3 studio Kritexco."},
     {k:['contact','email','reach','linkedin','github'],a:"Reach Hritik at hassani.hritik@gmail.com, on LinkedIn (linkedin.com/in/hritik-hassani), or GitHub (github.com/hritikhassaniNU)."},
     {k:['hi','hello','hey','sup'],a:"Hi! I'm Hritik's AI assistant. Ask me about his experience, projects, tech stack, or how to get in touch."}
   ];
@@ -131,7 +131,7 @@ Open to full-time roles Aug 2026. Contact: hassani.hritik@gmail.com, linkedin.co
   function scrollTo(sel){ document.querySelector(sel)?.scrollIntoView({behavior:'smooth',block:'start'}); }
   function flashProject(name){ scrollTo('#projects'); const c=[...document.querySelectorAll('#projects .item')].find(x=>x.querySelector('h3').textContent.toLowerCase().includes(name)); if(c){ setTimeout(()=>{c.style.outline='2px solid var(--accent)'; c.style.background='var(--surface-h)'; setTimeout(()=>{c.style.outline='';},1600);},450); } }
   async function vaRoute(text){ const q=text.toLowerCase();
-    if(/\b(bye|goodbye|that'?s all|stop listening|end session|see you)\b/.test(q)){ vaSpeak("Thanks for visiting — reach Hritik anytime by email. Goodbye!", endVA); return; }
+    if(/\b(bye|goodbye|that'?s all|stop listening|end session|see you)\b/.test(q)){ vaSpeak("Thanks for visiting reach Hritik anytime by email. Goodbye!", endVA); return; }
     for(const k of ['nora','applystack','kritexco']){ if(q.includes(k)){ flashProject(k); vaSpeak(localAnswer(k)); return; } }
     if(/\b(project|portfolio|your work|built)\b/.test(q)){ scrollTo('#projects'); vaSpeak("Here's his work. "+localAnswer('project')); return; }
     if(/\b(experience|codametrix|kritexco|worked|job|career)\b/.test(q)){ scrollTo('#experience'); vaSpeak(localAnswer('experience')); return; }
@@ -149,7 +149,7 @@ Open to full-time roles Aug 2026. Contact: hassani.hritik@gmail.com, linkedin.co
     va=new SR(); va.lang='en-US'; va.continuous=true; va.interimResults=true;
     va.onresult=e=>{ let interim='',fin=''; for(let i=e.resultIndex;i<e.results.length;i++){const r=e.results[i]; r.isFinal?fin+=r[0].transcript:interim+=r[0].transcript;} if(interim) vaCaption.textContent=interim; if(fin){vaCaption.textContent=fin; handleVA(fin.toLowerCase().trim(),fin.trim());} };
     va.onend=()=>{ if(vaActive&&!vaSpeaking){try{va.start();}catch(e){}} };
-    va.onerror=ev=>{ if(ev.error==='not-allowed'||ev.error==='service-not-allowed'){vaStatus.textContent='Microphone blocked — allow mic access'; vaActive=false;} };
+    va.onerror=ev=>{ if(ev.error==='not-allowed'||ev.error==='service-not-allowed'){vaStatus.textContent='Microphone blocked allow mic access'; vaActive=false;} };
     vaOrb.classList.add('listening'); try{va.start();}catch(e){}
     vaSpeak("Hi, I'm "+AGENT_NAME+", Hritik's assistant. Say 'Hey "+AGENT_NAME+"' whenever you're ready, and I'll walk you through his work.");
   }

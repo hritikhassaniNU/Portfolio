@@ -24,7 +24,7 @@ export const homeMarkup = `
           <div class="title"><span id="roleRotate"></span><span class="caret"></span></div>
         </div>
       </div>
-      <p class="tagline load l3">I build production AI agents and the distributed systems that run them — from architecture through CI/CD to live production.</p>
+      <p class="tagline load l3">I build production AI agents and the distributed systems that run them from architecture through CI/CD to live production.</p>
       <nav class="nav load l4" id="nav">
         <a href="#about" data-sec="about"><span class="ln"></span>About</a>
         <a href="#experience" data-sec="experience"><span class="ln"></span>Experience</a>
@@ -56,7 +56,7 @@ export const homeMarkup = `
       <div class="sec-head"><span class="num">01</span><h2>About</h2><span class="rule"></span></div>
       <div class="about-headline">I build AI agents<br><span>and the systems that run them.</span></div>
       <div class="about-body">
-        <p>I'm a Software &amp; AI Engineer who ships production agent systems end to end — from model behavior to the distributed infrastructure that keeps them fast, observable, and reliable. My focus is LLM agents, RAG, and event-driven backends that stay measurable under real traffic, enterprise constraints, and messy data.</p>
+        <p>I'm a Software &amp; AI Engineer who ships production agent systems end to end from model behavior to the distributed infrastructure that keeps them fast, observable, and reliable. My focus is LLM agents, RAG, and event-driven backends that stay measurable under real traffic, enterprise constraints, and messy data.</p>
         <p>Most recently at CodaMetrix, I took a clinical-coding AI agent from architecture to live production and designed the Kafka/Redis platform behind it. Before that I co-founded Kritexco, a Web3 studio, where I led a 10-engineer team shipping blockchain products for clients worldwide. I'm finishing a Master's in Computer Software Engineering at Northeastern (Aug 2026), and I own what I ship.</p>
       </div>
       <div class="about-beyond reveal">
@@ -79,8 +79,8 @@ export const homeMarkup = `
           <div class="tl-meta">JUN 2025 — DEC 2025</div>
           <h3>Software Engineer Co-op <span class="at">· CodaMetrix</span></h3>
           <ul>
-            <li>Built an AI agent for clinical-coding rule generation (LangGraph, Streamlit, Databricks) that analyzes Jira tickets, retrieves rules via Vector Search, detects conflicts, generates Drools-style rule JSON, and auto-opens GitHub PRs — <b>cutting engineering effort 48%</b>.</li>
-            <li>Designed an <b>event-driven architecture (Kafka, Redis)</b> for the coding-review platform, replacing synchronous DB reads with async processing and cache-aside reads — refresh time <b>30 min → 5 min</b> under concurrent load.</li>
+            <li>Built an AI agent for clinical-coding rule generation (LangGraph, Streamlit, Databricks) that analyzes Jira tickets, retrieves rules via Vector Search, detects conflicts, generates Drools-style rule JSON, and auto-opens GitHub PRs <b>cutting engineering effort 48%</b>.</li>
+            <li>Designed an <b>event-driven architecture (Kafka, Redis)</b> for the coding-review platform, replacing synchronous DB reads with async processing and cache-aside reads with a refresh time of <b>30 min → 5 min</b> under concurrent load.</li>
             <li>Improved rule-retrieval accuracy <b>30%</b> at sub-3s with a RAG pipeline over Databricks Vector Search; held agent responses <b>sub-200ms</b> via async SNS/Lambda workers.</li>
             <li>Migrated production deploys to a <b>Jenkins → ArgoCD GitOps</b> pipeline on AWS EKS with health-monitored rollouts and automated rollback, cutting manual release steps <b>54%</b>.</li>
           </ul>
@@ -91,9 +91,9 @@ export const homeMarkup = `
           <div class="tl-meta">JUN 2021 — JAN 2024</div>
           <h3>Co-Founder &amp; Software Engineer <span class="at">· Kritexco</span></h3>
           <ul>
-            <li>Co-founded a Web3 studio; shipped a secure <b>NFT marketplace DApp</b> end to end (<b>500+ users, 10+ countries</b>) — React/TypeScript/Redux client, Node/MongoDB services, custom smart contracts.</li>
+            <li>Co-founded a Web3 studio; shipped a secure <b>NFT marketplace DApp</b> end to end (<b>500+ users, 10+ countries</b>) React/TypeScript/Redux client, Node/MongoDB services, custom smart contracts.</li>
             <li>Architected and deployed contracts across <b>Ethereum, Polygon (ERC-721/1155), and Solana</b>, plus a custom ERC-20 launch; automated testnet→mainnet deploys with secure patterns that <b>cut audit-flagged vulnerabilities 60%</b>.</li>
-            <li>Led a <b>10-engineer team</b> across 10+ global client engagements — direction, scoping, budgets, delivery — driving <b>20% revenue growth</b>.</li>
+            <li>Led a <b>10-engineer team</b> across 10+ global client engagements direction, scoping, budgets, delivery driving <b>20% revenue growth</b>.</li>
           </ul>
           <div class="tags"><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Solidity</span><span class="tag">Web3.js</span><span class="tag">Node.js</span><span class="tag">IPFS</span></div>
         </div>
@@ -120,7 +120,7 @@ export const homeMarkup = `
           <div class="proj-links"><a href="https://github.com/hritikhassaniNU" target="_blank" rel="noopener" aria-label="Repo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
         </div>
         <h3><a class="proj-link" href="projects/nora/">NORA — AI Student Success Platform</a></h3>
-        <ul><li>An end-to-end AI advising platform for students and advisors: a dual-mode <b>LangChain multi-agent pipeline (Gemini 2.0 Flash)</b> behind university login that guides international students through CPT/OPT and coursework, grounding answers in official policy via a <b>ChromaDB RAG layer — 92% accuracy</b> on a 50-question eval set. Ships with a companion Chrome extension.</li></ul>
+        <ul><li>An end-to-end AI advising platform for students and advisors: a dual-mode <b>LangChain multi-agent pipeline (Gemini 2.0 Flash)</b> behind university login that guides international students through CPT/OPT and coursework, grounding answers in official policy via a <b>ChromaDB RAG layer with 92% accuracy</b> on a 50-question eval set. Ships with a companion Chrome extension.</li></ul>
         <div class="tags"><span class="tag">LangChain</span><span class="tag">Gemini</span><span class="tag">ChromaDB</span><span class="tag">RAG</span><span class="tag">Next.js</span></div>
       </div>
 
@@ -140,7 +140,7 @@ export const homeMarkup = `
           <div class="proj-links"><a href="https://github.com/hritikhassaniNU" target="_blank" rel="noopener" aria-label="Repo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
         </div>
         <h3><a class="proj-link" href="projects/kritexco/">Kritexco — Web3 Marketplace &amp; Studio</a></h3>
-        <ul><li>A secure NFT marketplace and Web3 studio: custom <b>ERC-721/1155 contracts across Ethereum, Polygon, and Solana</b>, a generative NFT engine pinning thousands of assets to IPFS via Pinata, and reusable Web3.js modules — serving 500+ users across 10+ countries.</li></ul>
+        <ul><li>A secure NFT marketplace and Web3 studio: custom <b>ERC-721/1155 contracts across Ethereum, Polygon, and Solana</b>, a generative NFT engine pinning thousands of assets to IPFS via Pinata, and reusable Web3.js modules serving 500+ users across 10+ countries.</li></ul>
         <div class="tags"><span class="tag">Solidity</span><span class="tag">Ethereum</span><span class="tag">Polygon</span><span class="tag">Web3.js</span><span class="tag">IPFS</span></div>
       </div>
     </section>
@@ -195,7 +195,7 @@ export const homeMarkup = `
       <div class="sec-head reveal"><span class="num">06</span><h2>Contact</h2><span class="rule"></span></div>
       <div class="reveal">
         <div class="contact-headline">Let's build something<br><span>that ships.</span></div>
-        <p class="contact-sub">I'm open to full-time Software / AI Engineering roles starting August 2026. The fastest way to reach me is email — I read every message and reply quickly.</p>
+        <p class="contact-sub">I'm open to full-time Software / AI Engineering roles starting August 2026. The fastest way to reach me is email,I read every message and reply quickly.</p>
         <a class="contact-mail" href="mailto:hassani.hritik@gmail.com">hassani.hritik@gmail.com <span>↗</span></a>
         <div class="contact-links">
           <a href="https://www.linkedin.com/in/hritik-hassani/" target="_blank" rel="noopener">LinkedIn</a>
