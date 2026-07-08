@@ -137,7 +137,7 @@ Open to full-time roles Aug 2026. Contact: hassani.hritik@gmail.com, linkedin.co
     if(/\b(experience|codametrix|kritexco|worked|job|career)\b/.test(q)){ scrollTo('#experience'); vaSpeak(localAnswer('experience')); return; }
     if(/\b(skill|stack|tech|about|who)\b/.test(q)){ scrollTo('#about'); vaSpeak(localAnswer('about')); return; }
     if(/\b(contact|hire|available|email|reach|open to)\b/.test(q)){ scrollTo('#about'); vaSpeak(localAnswer('hire')); return; }
-    if(/\b(resume|cv)\b/.test(q)){ vaSpeak("Opening his résumé now."); window.open('Hritik_Hassani_Resume.pdf','_blank'); return; }
+    if(/\b(resume|cv)\b/.test(q)){ vaSpeak("Opening his résumé now."); window.open('https://drive.google.com/file/d/1_HMBrIqGwd9hyqeFlsxjLMb7pHX-BnH0/view?usp=sharing','_blank'); return; }
     vaSpeak(await askAI(text));
   }
   function handleVA(q,raw){ if(vaSpeaking) return;
