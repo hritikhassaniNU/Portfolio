@@ -18,7 +18,7 @@ export const homeMarkup = `
     <div>
       <span class="mono-label avail load l1"><span class="dot"></span>BASED IN THE UNITED STATES · OPEN TO WORK</span>
       <div class="id-row load l2">
-        <div class="avatar-wrap"><div class="avatar"><div class="avatar-inner"><img src="/me.png" alt="Hritik Hassani" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"><span class="initials">HH</span></div></div></div>
+        <div class="avatar-wrap"><div class="avatar"><div class="avatar-inner"><img src="me.png" alt="Hritik Hassani" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"><span class="initials">HH</span></div></div></div>
         <div class="id-text">
           <h1>Hritik Hassani</h1>
           <div class="title"><span id="roleRotate"></span><span class="caret"></span></div>
@@ -42,7 +42,7 @@ export const homeMarkup = `
         <a href="https://hritikhassani.bio.link/" target="_blank" rel="noopener" aria-label="All links"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3.5 9h17M3.5 15h17M12 3a14 14 0 0 0 0 18M12 3a14 14 0 0 1 0 18"/></svg></a>
       </div>
       <div class="ctrl-row">
-        <a class="resume-btn" href="/Hritik_Hassani_Resume.pdf" target="_blank" rel="noopener">Résumé
+        <a class="resume-btn" href="Hritik_Hassani_Resume.pdf" target="_blank" rel="noopener">Résumé
           <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
         <div class="pal-wrap"><button class="mini" id="paletteBtn" aria-label="Change accent"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="1.3" fill="currentColor" stroke="none"/><circle cx="17" cy="11" r="1.3" fill="currentColor" stroke="none"/><circle cx="8" cy="7" r="1.3" fill="currentColor" stroke="none"/><circle cx="6.5" cy="12" r="1.3" fill="currentColor" stroke="none"/><path d="M12 2a10 10 0 1 0 0 20c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1-.25-.27-.4-.62-.4-1 0-.83.67-1.5 1.5-1.5H16a6 6 0 0 0 6-6c0-4.97-4.48-9-10-9Z"/></svg></button><div class="pal-pop" id="palettePop"></div></div>
         <button class="mini" id="themeBtn" aria-label="Toggle theme"><svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></svg></button>
@@ -119,7 +119,7 @@ export const homeMarkup = `
           <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></svg></span>
           <div class="proj-links"><a href="https://github.com/hritikhassaniNU" target="_blank" rel="noopener" aria-label="Repo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
         </div>
-        <h3><a class="proj-link" href="/projects/nora/">NORA — AI Student Success Platform</a></h3>
+        <h3><a class="proj-link" href="projects/nora/">NORA — AI Student Success Platform</a></h3>
         <ul><li>An end-to-end AI advising platform for students and advisors: a dual-mode <b>LangChain multi-agent pipeline (Gemini 2.0 Flash)</b> behind university login that guides international students through CPT/OPT and coursework, grounding answers in official policy via a <b>ChromaDB RAG layer — 92% accuracy</b> on a 50-question eval set. Ships with a companion Chrome extension.</li></ul>
         <div class="tags"><span class="tag">LangChain</span><span class="tag">Gemini</span><span class="tag">ChromaDB</span><span class="tag">RAG</span><span class="tag">Next.js</span></div>
       </div>
@@ -129,7 +129,7 @@ export const homeMarkup = `
           <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h4M7 13h4M15 9h2M15 13h2"/></svg></span>
           <div class="proj-links"><a href="https://github.com/hritikhassaniNU" target="_blank" rel="noopener" aria-label="Repo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
         </div>
-        <h3><a class="proj-link" href="/projects/applystack/">ApplyStack — Chrome Job-Tracking Extension</a></h3>
+        <h3><a class="proj-link" href="projects/applystack/">ApplyStack — Chrome Job-Tracking Extension</a></h3>
         <ul><li>A Chrome MV3 extension with a Kanban dashboard and a background service worker. Its <b>cross-frame autofill engine</b> traverses shadow DOM and nested forms to map <b>18 fields across 8 job boards</b>, with real-time WebSocket multi-tab sync over IndexedDB and secure in-sandbox PDF export.</li></ul>
         <div class="tags"><span class="tag">TypeScript</span><span class="tag">Chrome MV3</span><span class="tag">WebSocket</span><span class="tag">IndexedDB</span></div>
       </div>
@@ -139,7 +139,7 @@ export const homeMarkup = `
           <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 7v10l8 5 8-5V7Z"/><path d="m12 7 4 2.5v5L12 17l-4-2.5v-5Z"/></svg></span>
           <div class="proj-links"><a href="https://github.com/hritikhassaniNU" target="_blank" rel="noopener" aria-label="Repo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
         </div>
-        <h3><a class="proj-link" href="/projects/kritexco/">Kritexco — Web3 Marketplace &amp; Studio</a></h3>
+        <h3><a class="proj-link" href="projects/kritexco/">Kritexco — Web3 Marketplace &amp; Studio</a></h3>
         <ul><li>A secure NFT marketplace and Web3 studio: custom <b>ERC-721/1155 contracts across Ethereum, Polygon, and Solana</b>, a generative NFT engine pinning thousands of assets to IPFS via Pinata, and reusable Web3.js modules — serving 500+ users across 10+ countries.</li></ul>
         <div class="tags"><span class="tag">Solidity</span><span class="tag">Ethereum</span><span class="tag">Polygon</span><span class="tag">Web3.js</span><span class="tag">IPFS</span></div>
       </div>
@@ -200,7 +200,7 @@ export const homeMarkup = `
         <div class="contact-links">
           <a href="https://www.linkedin.com/in/hritik-hassani/" target="_blank" rel="noopener">LinkedIn</a>
           <a href="https://github.com/hritikhassaniNU" target="_blank" rel="noopener">GitHub</a>
-          <a href="/Hritik_Hassani_Resume.pdf" target="_blank" rel="noopener">Résumé</a>
+          <a href="Hritik_Hassani_Resume.pdf" target="_blank" rel="noopener">Résumé</a>
           <a href="https://hritikhassani.bio.link/" target="_blank" rel="noopener">All Links</a>
         </div>
       </div>

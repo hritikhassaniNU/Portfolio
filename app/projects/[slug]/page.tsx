@@ -18,7 +18,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     openGraph: {
       title,
       description: p.overview,
-      url: `https://hritikhassaninu.github.io/projects/${p.slug}/`,
+      url: `https://hritikhassani.me/projects/${p.slug}/`,
       images: [{ url: p.cover ?? "/og.png", width: 1200, height: 630 }],
     },
     twitter: {
@@ -30,9 +30,17 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   };
 }
 
+// Prefix static-asset paths with the build's basePath so plain <img>/<video>
+// (which Next does NOT auto-rewrite) resolve on /Portfolio/ and at the domain root alike.
+const BP = process.env.NEXT_PUBLIC_BASE_PATH || "";
+const asset = (s?: string) =>
+  !s ? s : /^https?:/.test(s) ? s : BP + (s.startsWith("/") ? s : "/" + s);
+
 export default function ProjectPage({ params }: { params: { slug: string } }) {
   const p = getProject(params.slug);
   if (!p) notFound();
+  const cover = asset(p.cover);
+  const video = asset(p.video);
 
   return (
     <main className="cs">
@@ -64,11 +72,11 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
 
         {/* Cover media — drop an image or video in /public/projects/<slug>/ and set cover/video in lib/projects.ts */}
         <div className="cs-media">
-          {p.video ? (
-            <video src={p.video} controls playsInline poster={p.cover} />
-          ) : p.cover ? (
+          {video ? (
+            <video src={video} controls playsInline poster={cover} />
+          ) : cover ? (
             /* eslint-disable-next-line @next/next/no-img-element */
-            <img src={p.cover} alt={`${p.name} preview`} />
+            <img src={cover} alt={`${p.name} preview`} />
           ) : (
             <div className="cs-media-empty">
               <span>Add a screenshot or 30–60s demo clip here</span>

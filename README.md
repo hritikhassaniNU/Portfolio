@@ -44,14 +44,32 @@ public/
 
 ## Deploy to GitHub Pages
 
-This repo assumes a **user site** served at the root (`https://hritikhassaniNU.github.io`).
+The repo is a **project site** named `Portfolio`. One build serves two places correctly,
+and it switches automatically:
 
-1. Push to `main`. The included workflow (`.github/workflows/deploy.yml`) builds and deploys automatically.
+- **No custom domain** → served at `https://hritikhassaniNU.github.io/Portfolio/`.
+  The build uses `basePath: "/Portfolio"` so all assets resolve.
+- **Custom domain** → served at the **root** of the domain (e.g. `https://hritikhassani.me/`).
+  The build drops the basePath.
+
+The switch is driven by `public/CNAME` (the file you add when configuring a custom domain),
+so you never edit code to switch:
+
+1. Push to `main`. The workflow (`.github/workflows/deploy.yml`) builds and deploys.
 2. In the repo: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+3. Live now at `https://hritikhassaniNU.github.io/Portfolio/`.
 
-If you instead deploy to a **project repo** (served at `/repo-name/`):
-- In `next.config.mjs`, set `basePath` and `assetPrefix` to `/repo-name`.
-- In `app/layout.tsx`, update the absolute `SITE` URL and OG/canonical URLs.
+### Attaching the custom domain later (no code change)
+
+1. Create `public/CNAME` containing one line: `hritikhassani.me` — this alone flips the
+   next build to root serving.
+2. **Settings → Pages → Custom domain →** `hritikhassani.me` → Save.
+3. At your DNS provider, add four apex `A` records for `@`:
+   `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`,
+   plus a `CNAME` for `www` → `hritikhassaninu.github.io`.
+4. Wait for DNS, then tick **Enforce HTTPS**.
+
+`next dev` always runs at the root regardless, so local development is unaffected.
 
 ## Notes
 
