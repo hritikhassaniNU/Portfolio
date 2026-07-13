@@ -12,8 +12,8 @@ import Script from "next/script";
  * is its own URL (/projects/nora/, /projects/applystack/, /projects/kritexco/),
  * so they show up automatically as page views.
  * ────────────────────────────────────────────────────────────────── */
-const UMAMI_WEBSITE_ID = "ca08600a-3343-41c9-92ce-0b631e45e613";   // from cloud.umami.is  (a UUID)
-const GA_MEASUREMENT_ID = "G-RJ8LGTZP2Z";  // from Google Analytics (looks like "G-XXXXXXXXXX")
+const UMAMI_WEBSITE_ID = "ca08600a-3343-41c9-92ce-0b631e45e613";   
+const GA_MEASUREMENT_ID = "G-RJ8LGTZP2Z"; 
 const UMAMI_SRC = "https://cloud.umami.is/script.js";
 
 export default function Analytics() {
