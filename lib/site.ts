@@ -6,7 +6,7 @@ export const LINKS = {
   bio: "https://hritikhassani.bio.link/",
   // Set this to your résumé. Either the file in /public (default) or your
   // Google Drive direct link, e.g. https://drive.google.com/uc?export=download&id=FILE_ID
-  resume: "https://drive.google.com/file/d/1_HMBrIqGwd9hyqeFlsxjLMb7pHX-BnH0/view?usp=sharing','_blank",
+  resume: "https://drive.google.com/uc?export=download&id=1_HMBrIqGwd9hyqeFlsxjLMb7pHX-BnH0",
 };
 
 export const NAV = [
