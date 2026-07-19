@@ -64,7 +64,7 @@ export const projects: Project[] = [
     tagline: "Web3 Marketplace & Studio",
     year: "2021 – 2024",
     overview:
-      "Kritexco is a Web3 studio and secure NFT marketplace shipped end to end — from smart contracts across multiple chains to a generative NFT engine and reusable integration modules — serving a global user base.",
+      "Kritexco is a Web3 studio and secure NFT marketplace shipped end to end, from smart contracts across multiple chains to a generative NFT engine and reusable integration modules, serving a global user base.",
     bullets: [
       "Shipped a secure NFT marketplace serving 500+ users across 10+ countries.",
       "Deployed custom ERC-721/1155 contracts across Ethereum, Polygon, and Solana, plus a custom ERC-20 token launch.",

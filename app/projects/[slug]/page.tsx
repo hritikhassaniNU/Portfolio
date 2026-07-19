@@ -10,7 +10,7 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const p = getProject(params.slug);
   if (!p) return { title: "Project not found" };
-  const title = `${p.name} — ${p.tagline} · Hritik Hassani`;
+  const title = `${p.name} - ${p.tagline} · Hritik Hassani`;
   return {
     title,
     description: p.overview,

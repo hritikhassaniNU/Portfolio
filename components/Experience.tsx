@@ -12,16 +12,16 @@ export default function Experience() {
         </div>
 
         <div className="item reveal">
-          <div className="tl-meta">JUN 2025 — DEC 2025</div>
+          <div className="tl-meta">JUN 2025 - DEC 2025</div>
           <h3>
             Software Engineer Co-op <span className="at">· CodaMetrix</span>
           </h3>
           <ul>
             <li>
-              Built an AI agent for clinical-coding rule generation (LangGraph, Streamlit, Databricks) that analyzes Jira tickets, retrieves rules via Vector Search, detects conflicts, generates Drools-style rule JSON, and auto-opens GitHub PRs — <b>cutting engineering effort 48%</b>.
+              Built an AI agent for clinical-coding rule generation (LangGraph, Streamlit, Databricks) that analyzes Jira tickets, retrieves rules via Vector Search, detects conflicts, generates Drools-style rule JSON, and auto-opens GitHub PRs, <b>cutting engineering effort 48%</b>.
             </li>
             <li>
-              Designed an <b>event-driven architecture (Kafka, Redis)</b> for the coding-review platform, replacing synchronous DB reads with async processing and cache-aside reads — refresh time <b>30 min → 5 min</b> under concurrent load.
+              Designed an <b>event-driven architecture (Kafka, Redis)</b> for the coding-review platform, replacing synchronous DB reads with async processing and cache-aside reads, reducing refresh time from <b>30 min to 5 min</b> under concurrent load.
             </li>
             <li>
               Improved rule-retrieval accuracy <b>30%</b> at sub-3s with a RAG pipeline over Databricks Vector Search; held agent responses <b>sub-200ms</b> via async SNS/Lambda workers.
@@ -42,19 +42,19 @@ export default function Experience() {
         </div>
 
         <div className="item reveal">
-          <div className="tl-meta">JUN 2021 — JAN 2024</div>
+          <div className="tl-meta">JUN 2021 - JAN 2024</div>
           <h3>
             Co-Founder &amp; Software Engineer <span className="at">· Kritexco</span>
           </h3>
           <ul>
             <li>
-              Co-founded a Web3 studio; shipped a secure <b>NFT marketplace DApp</b> end to end (<b>500+ users, 10+ countries</b>) — React/TypeScript/Redux client, Node/MongoDB services, custom smart contracts.
+              Co-founded a Web3 studio; shipped a secure <b>NFT marketplace DApp</b> end to end (<b>500+ users, 10+ countries</b>), React/TypeScript/Redux client, Node/MongoDB services, custom smart contracts.
             </li>
             <li>
               Architected and deployed contracts across <b>Ethereum, Polygon (ERC-721/1155), and Solana</b>, plus a custom ERC-20 launch; automated testnet→mainnet deploys with secure patterns that <b>cut audit-flagged vulnerabilities 60%</b>.
             </li>
             <li>
-              Led a <b>10-engineer team</b> across 10+ global client engagements — direction, scoping, budgets, delivery — driving <b>20% revenue growth</b>.
+              Led a <b>10-engineer team</b> across 10+ global client engagements covering direction, scoping, budgets, and delivery, driving <b>20% revenue growth</b>.
             </li>
           </ul>
           <div className="tags">
@@ -68,7 +68,7 @@ export default function Experience() {
         </div>
 
         <div className="item reveal">
-          <div className="tl-meta">JUN 2020 — AUG 2020</div>
+          <div className="tl-meta">JUN 2020 - AUG 2020</div>
           <h3>
             Software Developer Intern <span className="at">· Synergy Technology</span>
           </h3>

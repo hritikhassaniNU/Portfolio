@@ -37,7 +37,7 @@ export default function Intro() {
           </div>
         </div>
         <p className="tagline load l3">
-          I build production AI agents and the distributed systems that run them — from architecture through CI/CD to live production.
+          I build production AI agents and the distributed systems that run them, from architecture through CI/CD to live production.
         </p>
         <nav className="nav load l4" id="nav">
           {NAV.map((item) => (

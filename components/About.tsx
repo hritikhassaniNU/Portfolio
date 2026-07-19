@@ -13,7 +13,7 @@ export default function About() {
       </div>
       <div className="about-body">
         <p>
-          I&apos;m a Software &amp; AI Engineer who ships production agent systems end to end — from model behavior to the distributed infrastructure that keeps them fast, observable, and reliable. My focus is LLM agents, RAG, and event-driven backends that stay measurable under real traffic, enterprise constraints, and messy data.
+          I&apos;m a Software &amp; AI Engineer who ships production agent systems end to end, from model behavior to the distributed infrastructure that keeps them fast, observable, and reliable. My focus is LLM agents, RAG, and event-driven backends that stay measurable under real traffic, enterprise constraints, and messy data.
         </p>
         <p>
           Most recently at CodaMetrix, I took a clinical-coding AI agent from architecture to live production and designed the Kafka/Redis platform behind it. Before that I co-founded Kritexco, a Web3 studio, where I led a 10-engineer team shipping blockchain products for clients worldwide. I&apos;m finishing a Master&apos;s in Computer Software Engineering at Northeastern (Aug 2026), and I own what I ship.

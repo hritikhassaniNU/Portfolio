@@ -6,9 +6,9 @@ const SITE = "https://hritikhassani.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
-  title: "Hritik Hassani — Software & AI Engineer",
+  title: "Hritik Hassani - Software & AI Engineer",
   description:
-    "Hritik Hassani — Software & AI Engineer building production AI agents and the distributed systems that run them.",
+    "Hritik Hassani - Software & AI Engineer building production AI agents and the distributed systems that run them.",
   keywords: [
     "Hritik Hassani", "Software Engineer", "AI Engineer", "AI agents",
     "LangGraph", "LangChain", "RAG", "distributed systems",
@@ -19,14 +19,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: SITE + "/",
-    title: "Hritik Hassani — Software & AI Engineer",
+    title: "Hritik Hassani - Software & AI Engineer",
     description:
-      "I build production AI agents and the distributed systems that run them — agents, RAG, and cloud infrastructure from architecture to production.",
+      "I build production AI agents and the distributed systems that run them, agents, RAG, and cloud infrastructure from architecture to production.",
     images: [{ url: "/og.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hritik Hassani — Software & AI Engineer",
+    title: "Hritik Hassani - Software & AI Engineer",
     description: "I build production AI agents and the distributed systems that run them.",
     images: ["/og.png"],
   },

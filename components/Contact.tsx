@@ -15,7 +15,7 @@ export default function Contact() {
           <span>that ships.</span>
         </div>
         <p className="contact-sub">
-          I&apos;m open to full-time Software / AI Engineering roles starting August 2026. The fastest way to reach me is email — I read every message and reply quickly.
+          I&apos;m open to full-time Software / AI Engineering roles starting August 2026. The fastest way to reach me is email. I read every message and reply quickly.
         </p>
         <a className="contact-mail" href={`mailto:${LINKS.email}`}>
           {LINKS.email} <span>↗</span>

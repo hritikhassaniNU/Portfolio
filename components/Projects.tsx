@@ -25,12 +25,12 @@ export default function Projects() {
         </div>
         <h3>
           <a className="proj-link" href="projects/nora/">
-            NORA — AI Student Success Platform
+            NORA - AI Student Success Platform
           </a>
         </h3>
         <ul>
           <li>
-            An end-to-end AI advising platform for students and advisors: a dual-mode <b>LangChain multi-agent pipeline (Gemini 2.0 Flash)</b> behind university login that guides international students through CPT/OPT and coursework, grounding answers in official policy via a <b>ChromaDB RAG layer — 92% accuracy</b> on a 50-question eval set. Ships with a companion Chrome extension.
+            An end-to-end AI advising platform for students and advisors: a dual-mode <b>LangChain multi-agent pipeline (Gemini 2.0 Flash)</b> behind university login that guides international students through CPT/OPT and coursework, grounding answers in official policy via a <b>ChromaDB RAG layer with 92% accuracy</b> on a 50-question eval set. Ships with a companion Chrome extension.
           </li>
         </ul>
         <div className="tags">
@@ -58,7 +58,7 @@ export default function Projects() {
         </div>
         <h3>
           <a className="proj-link" href="projects/applystack/">
-            ApplyStack — Chrome Job-Tracking Extension
+            ApplyStack - Chrome Job-Tracking Extension
           </a>
         </h3>
         <ul>
@@ -90,12 +90,12 @@ export default function Projects() {
         </div>
         <h3>
           <a className="proj-link" href="projects/kritexco/">
-            Kritexco — Web3 Marketplace &amp; Studio
+            Kritexco - Web3 Marketplace &amp; Studio
           </a>
         </h3>
         <ul>
           <li>
-            A secure NFT marketplace and Web3 studio: custom <b>ERC-721/1155 contracts across Ethereum, Polygon, and Solana</b>, a generative NFT engine pinning thousands of assets to IPFS via Pinata, and reusable Web3.js modules — serving 500+ users across 10+ countries.
+            A secure NFT marketplace and Web3 studio: custom <b>ERC-721/1155 contracts across Ethereum, Polygon, and Solana</b>, a generative NFT engine pinning thousands of assets to IPFS via Pinata, and reusable Web3.js modules, serving 500+ users across 10+ countries.
           </li>
         </ul>
         <div className="tags">
