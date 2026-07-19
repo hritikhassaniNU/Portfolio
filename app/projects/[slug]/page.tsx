@@ -18,7 +18,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     openGraph: {
       title,
       description: p.overview,
-      url: `https://hritikhassani.me/projects/${p.slug}/`,
+      url: `https://hritikhassani.com/projects/${p.slug}/`,
       images: [{ url: p.cover ?? "/og.png", width: 1200, height: 630 }],
     },
     twitter: {

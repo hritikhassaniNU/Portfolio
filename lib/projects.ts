@@ -35,6 +35,7 @@ export const projects: Project[] = [
     ],
     stack: ["LangChain", "Gemini 2.0", "Multi-Agent", "ChromaDB", "RAG", "Next.js"],
     github: "https://github.com/hritikhassaniNU",
+    cover: "/nora.png",
   },
   {
     slug: "applystack",
@@ -55,6 +56,7 @@ export const projects: Project[] = [
     ],
     stack: ["TypeScript", "Chrome MV3", "Service Worker", "WebSocket", "IndexedDB"],
     github: "https://github.com/hritikhassaniNU",
+    cover: "/applystack.png",
   },
   {
     slug: "kritexco",
